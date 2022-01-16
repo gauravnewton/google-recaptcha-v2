@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+    <body>
+        <form>
+            <div class="g-recaptcha w-100" data-sitekey="6LdQHhQeAAAAAFuHb2RiDSRsWL1AWZSOdWzIMYIx" data-callback="callback">
+                                
+            </div>
+        </form>
+        <script>
+
+        function callback(){
+            if(grecaptcha.getResponse().length !== 0){
+                console.log("The captcha has been already solved");
+            }
+        }
+    
+        </script>
+    </body>
+</html>
